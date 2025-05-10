@@ -50,6 +50,9 @@ search = GridSearchCV(
 # 6. Fit 
 search.fit(X[top10], y)
 
+print('Best feature')
+print(*top10)
+
 # 7. Tham số tốt nhất
 print("Best parameters found:")
 print(search.best_params_)
